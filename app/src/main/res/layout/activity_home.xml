@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/military_background"
+
+    android:padding="16dp">
+
+    <!-- Home page title -->
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CombatMed Pro Home"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+         />
+
+    <!-- Health Monitoring with icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccc66"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_health_monitoring" /> <!-- Add your image file here -->
+
+        <Button
+            android:id="@+id/btn_health_monitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real-Time Health Monitoring"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Telemedicine with icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#cccc66"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_telemedicine" /> <!-- Add your image file here -->
+
+        <Button
+            android:id="@+id/btn_telemedicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telemedicine"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Deployment-Specific Assessments with icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#cccc66"
+        android:padding="16dp"
+
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_assessments" /> <!-- Add your image file here -->
+
+        <Button
+            android:id="@+id/btn_assessments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deployment-Specific Assessments"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

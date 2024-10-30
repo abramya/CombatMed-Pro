@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CombatMed-Pro Home"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <!-- Health Monitoring Button -->
+    <Button
+        android:id="@+id/btn_health_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/ic_health_monitoring"
+        android:text="Health Monitoring"
+        android:padding="10dp" />
+
+    <!-- Assessments Button -->
+    <Button
+        android:id="@+id/btn_assessments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/ic_assessments"
+        android:text="Assessments"
+        android:padding="10dp" />
+
+    <!-- Telemedicine Button -->
+    <Button
+        android:id="@+id/btn_telemedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/ic_telemedicine"
+        android:text="Telemedicine"
+        android:padding="10dp" />
+
+</LinearLayout>

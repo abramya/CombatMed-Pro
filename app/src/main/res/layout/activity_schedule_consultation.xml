@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/military_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule a Consultation"
+        android:background="#cccc66"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:padding="24dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/consultation_date_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_date_dd_mm_yyyy"
+        android:background="@android:color/white"
+        android:inputType="date"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/> <!-- Add padding -->
+
+
+    <EditText
+        android:id="@+id/consultation_time_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="@string/enter_time_hh_mm"
+        android:inputType="time"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/consultation_notes_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/additional_notes"
+        android:inputType="textMultiLine"
+        android:background="@android:color/white"
+        android:padding="12dp"      />
+
+    <Button
+        android:id="@+id/schedule_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule Consultation"
+        android:layout_marginTop="16dp"
+        android:padding="24dp"
+        android:textSize="26sp"/>
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/military_background">
+
+    <TextView
+        android:id="@+id/tv_health_monitoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Monitoring"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/tv_health_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor your health metrics, view your heart rate, blood pressure, and health history."
+        android:layout_below="@id/tv_health_monitoring"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/check_heart_rate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_health_info"
+        android:layout_marginTop="24dp"
+        android:text="Check Heart Rate"
+         />
+    <Button
+        android:id="@+id/check_blood_pressure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_heart_rate_btn"
+        android:layout_marginTop="16dp"
+        android:text="Check Blood Pressure"
+         />
+    <Button
+        android:id="@+id/view_health_history_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_blood_pressure_btn"
+        android:layout_marginTop="16dp"
+        android:text="View Health History"
+         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/health_info_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp" />
+
+    <!-- Add additional UI elements here -->
+</LinearLayout>
